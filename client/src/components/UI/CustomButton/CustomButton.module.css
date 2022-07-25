@@ -1,0 +1,55 @@
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.secondary__button {
+    color: #466EFA;
+    background: #DAE2FF;
+}
+.secondary__button:hover {
+    color: #113ACA;
+}
+
+
+.primary__button {
+    color: #FFFFFF;
+    background: #466EFA;
+}
+.primary__button:hover {
+    background: #113ACA;
+}
+
+.primary__button, .secondary__button {
+    cursor: pointer;
+    transition: all .3s ease;
+    border-radius: 12px;
+    padding: 14px 42px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    height: 48px;
+}
+.primary__button:disabled, .secondary__button:disabled {
+    color: #FFFFFF;
+    background: #E5EBFF;
+}
+
+.primary__button:focus, .secondary__button:focus {
+    outline: none;
+}
+.primary__icon {
+    fill: #FFFFFF;
+}
+.secondary__icon {
+    fill: #466EFA;
+}
+.primary__icon, .secondary__icon {
+
+    animation: spin infinite 2s linear;
+}

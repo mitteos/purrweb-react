@@ -1,0 +1,87 @@
+.input__wrapper {
+    position: relative;
+    width: 280px;
+}
+.form__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form__input_label {
+    font-weight: 400;
+    font-size: 12px;
+    color: #0B1332;
+}
+
+.form__input {
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    color: #717583;
+    padding: 14px 20px;
+    background: #F2F3F4;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid #F2F3F4;
+    width: 100%;
+    transition: all .3s ease;
+}
+.form__input:focus {
+    color: #0B1332;
+    border: 1px solid #0B1332;
+    background: #FFFFFF;
+}
+.form__input:not([value='']) {
+    color: #0B1332;
+}
+.form__input:disabled {
+    color: #CACDD7;
+}
+.form__input.valid {
+    border: 1px solid #17BC77;
+}
+.form__input.invalid {
+    border: 1px solid #F46666;
+}
+
+
+.input__control {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.input__control_clear {
+    opacity: 0;
+    cursor: pointer;
+    fill: #0B1332;
+    transition: all .3s ease;
+}
+.input__control_clear.active {
+    opacity: 1;
+}
+.input__control_clear.invalid {
+    fill: #F46666;
+}
+
+.input__control_success {
+    transition: all .3s ease;
+}
+
+.input__control_swap {
+    cursor: pointer;
+}
+
+.input__error {
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: #F46666;
+}
